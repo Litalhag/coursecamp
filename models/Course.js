@@ -36,6 +36,11 @@ const CourseSchema = new mongoose.Schema({
     ref: 'Bootcamp',
     required: true,
   },
+  user: {
+    type: mongoose.Schema.ObjectId,
+    ref: 'User',
+    required: true,
+  },
 })
 
 // So statics are actually called on the model itself.
